@@ -1,0 +1,228 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  height: 100vh;
+  width: 100%;
+}
+.v2_3 {
+  width: 428px;
+  height: 926px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v2_20 {
+  width: 451px;
+  height: 552px;
+  background: rgba(198,78,78,0.6100000143051147);
+  opacity: 1;
+  position: absolute;
+  top: 45px;
+  left: 77px;
+  border-radius: 50%;
+}
+.v2_21 {
+  width: 430px;
+  height: 464px;
+  background: rgba(3,15,125,0.6299999952316284);
+  opacity: 1;
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  border-radius: 50%;
+}
+.v2_22 {
+  width: 102px;
+  height: 28px;
+  background: rgba(80,58,127,1);
+  opacity: 1;
+  position: absolute;
+  top: 100px;
+  left: 197px;
+  overflow: hidden;
+}
+.v2_19 {
+  width: 420px;
+  height: 427px;
+  background: rgba(246,85,85,1);
+  opacity: 1;
+  position: absolute;
+  top: 363px;
+  left: 7px;
+  border: 1px solid rgba(0,0,0,1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+.v2_24 {
+  width: 409px;
+  height: 395px;
+  background: rgba(172,10,10,0);
+  opacity: 1;
+  position: absolute;
+  top: 408px;
+  left: 21px;
+  overflow: hidden;
+}
+.v2_23 {
+  width: 144px;
+  height: 34px;
+  background: rgba(79,231,241,0.5799999833106995);
+  opacity: 1;
+  position: absolute;
+  top: 318px;
+  left: 89px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+}
+.v4_42 {
+  width: 128px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: -6px;
+  left: 5px;
+  font-family: SeoulNamsan CM;
+  font-weight: Regular;
+  font-size: 36px;
+  opacity: 1;
+  text-align: center;
+}
+.v2_11 {
+  width: 340px;
+  height: 44px;
+  background: rgba(216,238,236,1);
+  opacity: 1;
+  position: absolute;
+  top: 89px;
+  left: 12px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+}
+.v2_12 {
+  width: 189px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 17px;
+  left: 55px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: SeoulNamsan CM;
+  font-weight: Regular;
+  font-size: 45px;
+  opacity: 1;
+  text-align: center;
+}
+.v2_15 {
+  width: 331px;
+  height: 49px;
+  background: rgba(216,238,236,1);
+  opacity: 1;
+  position: absolute;
+  top: 231px;
+  left: 9px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+}
+.v2_17 {
+  width: 263px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 151px;
+  left: 29px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: SeoulNamsan CM;
+  font-weight: Regular;
+  font-size: 46px;
+  opacity: 1;
+  text-align: center;
+}
+.v2_18 {
+  width: 101px;
+  height: 66px;
+  background: url("../images/v2_18.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 165px;
+  left: 120px;
+  overflow: hidden;
+}
+.v2_6 {
+  width: 111px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 100px;
+  left: 186px;
+  font-family: SeoulNamsan CM;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+#car{
+}
+#hyd{
+  
+}
+.boxx{
+  
+  width: 344px;
+  height: 48px;
+  background-color: rgba(0,0,0,0);
+  text-align: -moz-center;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
