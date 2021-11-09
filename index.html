@@ -1,0 +1,123 @@
+<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/css?family=SeoulNamsan+CM&display=swap" rel="stylesheet" /><link href="main.css" rel="stylesheet" /><title>Document</title></head><body><div class="v2_3"><div class="v2_20"></div><div class="v2_21"></div><div class="v2_22"></div><div class="v2_19"></div><div class="v2_24"><div class="v2_23"><span id="myBtn" class="v4_42">sumit</span></div><div class="v2_11"><input type="number"id="car" class="boxx"></div><span class="v2_12">CARBON</span><div class="v2_15"><input type="number"id="hyd" class="boxx"></div><span class="v2_17">HYDROYEN</span><div class="v2_18"></div></div><span class="v2_6">Hydrcarbon </span></div>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <div id="viewbox">
+<h2>Compound:-</h2>
+ <b id="compound"></b>
+<h2 >No. of bond:-</h2>
+<b><p id="bond"></p></b>
+<b><p id="property"></p></b>
+</div>
+<div id="error">
+                <h1>Dear user <br> you enter wrong config</h1>
+</div>      
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+<script>
+console.log("hello")
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+  document.getElementById("viewbox").style.display = "none";
+document.getElementById("error").style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+console.log("Hello world");
+document.getElementById("viewbox").style.display = "none";
+document.getElementById("error").style.display = "none";
+                const name =["meth","eth","prop","but","pent","Hex","hept","oct","non","dec"];
+               btn.onclick = function()
+                {
+                console.log("hello");
+                modal.style.display = "block";
+                
+                document.getElementById("viewbox")
+                var carbon = document.getElementById("car").value;
+            var cname = name[carbon-1]
+                var hydrogen = document.getElementById("hyd").value;
+                 var h = hydrogen
+                 var n=carbon*2;
+                 console.log(h,n)
+                 h=parseInt(h);
+                 n=parseInt(n);
+                 let run="true"
+    
+         var alk,bond,sat;
+         let  prt=false;
+                 if(h===n){
+                 console.log("......")
+                 }
+    if (h===n){
+        alk="ene";
+        bond="double bond(c=c)";
+        sat="unsaturated compound";
+        
+    }
+    else if(h==n+2){
+        alk="ane"    
+        bond="single bond(c-c)";
+        sat="saturated compound";
+        
+        
+    }
+    else if (h==n-2){
+        alk="yne"
+        bond="triple bond(c=-c)";
+        sat="unsaturated compound";
+        
+    }
+   else if (h==n+1){ 
+        alk="yle";
+        bond="single bond(c-c)";
+        sat="saturated compound";
+         
+   } 
+   else{
+         document.getElementById("error").style.display = "block";
+         console.log("else");
+         run="false";
+   }
+   if(run==="true"){
+   console.log(prt)
+   var compound=cname+alk
+   var alk= "alk"+alk
+   console.log(alk,sat,bond,compound)
+   document.getElementById("compound").innerHTML = compound;
+   document.getElementById("bond").innerHTML = bond;
+   document.getElementById("property").innerHTML = "its is an "+alk+" and "+ sat;
+   document.getElementById("viewbox").style.display = "block";}
+}
+        
+                 
+</script>
+</body></html>
